@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Teams</title>
+    <link rel="stylesheet" href="css-files/team.css" />
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo" />
+    <div class="background-img">
+      <img class="backdrop" src="images/logo.png" alt="logo" />
+    </div>
+
+      <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="userAvatar" class="avatar" onclick="confirmLogout()"></div>
+    
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="close-btn" onclick="toggleMenu()">✖</div>
+      <ul>
+        <li><a href="team.html">Add Team/Department</a></li>
+        <li><a href="members-card.html">Return to Homepage</a></li>
+      </ul>
+    </div>
+
+    <div class="form-container">
+      <form id="add-team-form">
+        <input
+          type="text"
+          id="new-team-name"
+          placeholder="New Team Name"
+          required
+        />
+        <button type="submit">Add Team</button>
+        <button type="button" onclick="skipTeamForm()">Do Not Add Team</button>
+      </form>
+
+      <form id="add-department-form">
+        <select id="team-select" required>
+          <option value="">-- Select Team --</option>
+        </select>
+        <input
+          type="text"
+          id="new-dept-name"
+          placeholder="New Department Name"
+          required
+        />
+        <input
+          type="number"
+          id="present-count"
+          placeholder="Present"
+          min="0"
+          required
+        />
+        <input
+          type="number"
+          id="absent-count"
+          placeholder="Absent"
+          min="0"
+          required
+        />
+        <button type="submit">Add Department</button>
+        <button type="button" onclick="skipDeptForm()">
+          Do Not Add Department
+        </button>
+      </form>
+    </div>
+
+    <script src="js-file/team.js"></script>
+  </body>
+</html>

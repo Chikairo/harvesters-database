@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member Card</title>
+    <link rel="stylesheet" href="css-files/card.css" />
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo" />
+    <div class="background-img">
+      <img class="backdrop" src="images/logo.png" alt="logo" />
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="userAvatar" class="avatar" onclick="confirmLogout()"></div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="close-btn" onclick="toggleMenu()">✖</div>
+      <ul>
+        <li><a href="members-card.html">Members</a></li>
+        <li><a href="workers-card.html">Workers</a></li>
+        <li><a href="first-timers-card.html"> First timers</a></li>
+        <li><a href="growthtrack-card.html">Growth Track</a></li>
+        <li><a href="attendance-card.html">Attendance</a></li>
+        <li><a href="#">Access Control</a></li>
+      </ul>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search..." />
+      <ul id="results"></ul>
+    </div>
+
+    <h2>Member Card</h2>
+    <div id="personDetails" class="card-box"></div>
+
+    <script src="js-file/members-card.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Source\_Sans\_3";
+  src: url("/fonts/Source\_Sans\_3/SourceSans3-VariableFont\_wght.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #302b63;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: auto;
+  z-index: 100;
+  margin-top: 1rem;
+}
+
+/* Hamburger menu */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Overlay menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background: rgba(8, 8, 8, 0.692);
+  color: white;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 99;
+  padding-top: 60px;
+}
+
+.menu-overlay.open {
+  left: 0; /* Slide into view */
+}
+
+.menu-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(17, 17, 17, 0);
+}
+
+.menu-overlay li {
+  margin: 20px 0;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.menu-overlay a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+/*avatar*/
+.avatar {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-size: 28px;
+  color: #302b63;
+  cursor: pointer;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0.25rem 0 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+form button[type="submit"] {
+  background-color: #000000;
+  color: white;
+}
+
+form button[type="button"] {
+  background-color: #302b63;
+  color: rgb(255, 255, 255);
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 475px) {
+  form {
+    padding: 1rem;
+  }
+
+  form button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    left: 60px;
+  }
+
+  .hamburger {
+    font-size: 24px;
+    top: 18px;
+  }
+}

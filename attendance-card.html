@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance</title>
+    <link rel="stylesheet" href="css-files/attendance.css" />
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo" />
+    <div id="userAvatar" class="avatar" onclick="confirmLogout()"></div>
+    <div class="background-img">
+      <img class="backdrop" src="images/logo.png" alt="logo" />
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="userAvatar" class="avatar" onclick="confirmLogout()"></div>
+    
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="close-btn" onclick="toggleMenu()">✖</div>
+      <ul>
+        <li><a href="team.html">Add Team/Department</a></li>
+        <li><a href="members-card.html">Return to Homepage</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="container">
+        <section id="attendance-overview">
+          <h2>Attendance Overview by Department</h2>
+
+          <div class="team-navigation">
+            <strong>Teams:</strong>
+            <a
+              href="#general-services"
+              class="active-team"
+              data-team="general-services"
+              >General Services</a
+            >
+            <a href="#operations" data-team="operations">Operations</a>
+            <a href="#logistics" data-team="logistics">Logistics</a>
+          </div>
+
+          <div
+            id="general-services-attendance"
+            class="team-section"
+            style="display: block"
+          >
+            <h3>General Services</h3>
+            <div class="department-dropdown">
+              <label for="general-services-dept">Select Department:</label>
+              <select id="general-services-dept" data-team="general-services">
+                <option value="all">All Departments</option>
+              </select>
+            </div>
+            <table id="general-services-table">
+              <thead>
+                <tr>
+                  <th>Department</th>
+                  <th>Present</th>
+                  <th>Absent</th>
+                  <th>Total</th>
+                  <th>View Members</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div
+            id="operations-attendance"
+            class="team-section"
+            style="display: none"
+          >
+            <h3>Operations</h3>
+            <div class="department-dropdown">
+              <label for="operations-dept">Select Department:</label>
+              <select id="operations-dept" data-team="operations">
+                <option value="all">All Departments</option>
+              </select>
+            </div>
+            <table id="operations-table">
+              <thead>
+                <tr>
+                  <th>Department</th>
+                  <th>Present</th>
+                  <th>Absent</th>
+                  <th>Total</th>
+                  <th>View Members</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div
+            id="logistics-attendance"
+            class="team-section"
+            style="display: none"
+          >
+            <h3>Logistics</h3>
+            <div class="department-dropdown">
+              <label for="logistics-dept">Select Department:</label>
+              <select id="logistics-dept" data-team="logistics">
+                <option value="all">All Departments</option>
+              </select>
+            </div>
+            <table id="logistics-table">
+              <thead>
+                <tr>
+                  <th>Department</th>
+                  <th>Present</th>
+                  <th>Absent</th>
+                  <th>Total</th>
+                  <th>View Members</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js-file/attendance.js"></script>
+  </body>
+</html>

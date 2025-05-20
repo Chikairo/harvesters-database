@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center contents horizontally */
+  gap: 60px; /* adjust spacing between text and image */
+  padding: 100px 60px;
+  background: linear-gradient(to bottom, #0f1322, #302b63);
+  color: white;
+  min-height: 90vh;
+  position: relative;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #dddddd;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signup {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup:hover {
+  background: #ddd;
+}
+
+/* signup-icon image */
+.signup-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Arrow beside Sign Up */
+.dropdown-toggle {
+  width: 15px; /* Adjust size as needed */
+  height: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  filter: brightness(0) invert(1);
+}
+
+/* Rotated arrow when menu is open */
+.dropdown-toggle.rotate {
+  transform: rotate(90deg);
+}
+
+/* Dropdown menu */
+.signup-popup {
+  display: none;
+  margin: auto;
+  border-radius: 6px;
+  width: 6rem;
+  margin: 10px 40px 10px 40px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: block;
+}
+
+.signup-popup a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Show class for JS toggle */
+.show {
+  display: block;
+}
+
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+/*features section*/
+
+.features {
+  padding: 80px 60px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Each feature row */
+.feature-row {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Feature image */
+.feature-image {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature text */
+.feature-text {
+  flex: 1;
+  padding: 20px 0;
+  font-size: 1.125rem;
+}
+
+.feature-text h2 {
+  font-size: 1.8rem;
+  color: #302b;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.footer-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.footer-pattern img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* ========== TABLET: 768px and below ========== */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 80px 30px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 0 auto 10px auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin: 3rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+  }
+
+  .feature-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .signup-popup {
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .footer-content {
+    font-size: 0.8rem;
+  }
+}
+
+/* ========== MOBILE: 425px and below ========== */
+@media screen and (max-width: 425px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .signup {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .dropdown-toggle {
+    width: 12px;
+    height: 12px;
+  }
+
+  .feature-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-text {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    font-size: 0.7rem;
+  }
+}
+
+/* ========== SMALLER MOBILE: 375px and 320px ========== */
+@media screen and (max-width: 375px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px; /* reduce spacing between text and image */
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+   .footer-content {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .hero-content {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+    margin: 1.5rem;
+  }
+
+  .signup {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .feature-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .feature-text {
+    font-size: 0.75rem;
+  }
+
+  .footer-content {
+    font-size: 0.5rem;
+  }
+}

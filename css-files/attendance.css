@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Source_Sans_3";
+  src: url("/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  background-color: #302b63;
+  margin: 0;
+  padding: 0;
+  font-family: "Source_Sans_3";
+  font-size: 1.25rem;
+  color: white;
+}
+
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: auto;
+  z-index: 100;
+  margin-top: 1rem;
+}
+
+/* Hamburger menu */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Overlay menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background: rgba(8, 8, 8, 0.692);
+  color: white;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 99;
+  padding-top: 60px;
+}
+
+.menu-overlay.open {
+  left: 0; /* Slide into view */
+}
+
+.menu-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(17, 17, 17, 0);
+}
+
+.menu-overlay li {
+  margin: 20px 0;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.menu-overlay a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/*avatar*/
+.avatar {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-size: 28px;
+  color: #302b63;
+  cursor: pointer;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.background-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem; 
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin-top: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+thead {
+    color: black;
+}
+
+h2,
+h3 {
+  margin: 30px 0px 30px 0px;
+  text-align: center;
+}
+
+strong {
+    margin-right: 1rem;
+}
+
+.team-navigation {
+  margin-bottom: 15px;
+  text-align: center; 
+    width: 100%;
+}
+
+.team-navigation a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fffefe;
+}
+
+.team-navigation a.active-team {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: black;
+}
+
+.team-section {
+  display: none;
+}
+
+.department-dropdown {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.view-members {
+  padding: 8px 12px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.view-members:hover {
+  background-color: #138496;
+}
+
+
+/* Small phones landscape (approx 475px) */
+@media (max-width: 475px) {
+  body {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .team-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-navigation a {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .department-dropdown {
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .hamburger {
+    font-size: 24px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+
+/* Smaller phones portrait (375px) */
+@media (max-width: 375px) {
+  body {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .team-navigation a {
+    max-width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .department-dropdown {
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  .view-members,
+  button {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .avatar {
+    left: 70px;
+  }
+}
+
+/* Very small phones (320px) */
+@media (max-width: 320px) {
+  body {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .team-navigation a {
+    font-size: 0.8rem;
+    padding: 6px;
+    max-width: 100%;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+
+  .department-dropdown {
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 0.75rem;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  .view-members,
+  button {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}

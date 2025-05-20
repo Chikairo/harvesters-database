@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "address": "123 Apple St, Wonderland",
+    "contact": "0704984875",
+    "growth_track": "No",
+    "worker": "Yes",
+    "date": "3 November 2024",
+    "attendance": "4",
+    "yearlyattendance": "25"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "address": "456 Banana Ave, Nowhere",
+    "contact": "09084757575",
+    "growth_track": "Yes",
+    "worker": "yes",
+    "date": "1 December 2024",
+    "attendance": "4",
+    "yearlyattendance": "20"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie@example.com",
+    "address": "789 Cherry Blvd, Peanuts Town",
+    "contact": "0802848488",
+    "growth_track": "Yes",
+    "worker": "No",
+    "date": "20 January 2025",
+    "attendance": "4",
+    "yearlyattendance": "15"
+  },
+  {
+    "id": 4,
+    "name": "Kairo",
+    "email": "kairo@example.com",
+    "address": "x block Nigeria",
+    "contact": "08072139251",
+    "growth_track": "No",
+    "worker": "Yes",
+    "date": "20 November 2023",
+    "attendance": "4",
+    "yearlyattendance": "43"
+  }
+]

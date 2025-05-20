@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "address": "123 Apple St, Wonderland",
+    "contact": "0704984875",
+    "church_birthday": "3 May 2023",
+    "workers_day": "10 December 2024",
+    "department": "Media",
+    "attendance": "4"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "address": "456 Banana Ave, Nowhere",
+    "contact": "09084757575",
+    "church_birthday": "1 December 2022",
+    "workers_day": "10 October 2023",
+    "department": "Finance",
+    "attendance": "4"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie@example.com",
+    "address": "789 Cherry Blvd, Peanuts Town",
+    "contact": "0802848488",
+    "church_birthday": "3 January 2024",
+    "workers_day": "6 May 2024",
+    "department": "Techinical",
+    "attendance": "4"
+  },
+  {
+    "id": 4,
+    "name": "Kairo",
+    "email": "kairo@example.com",
+    "address": "x block Nigeria",
+    "contact": "08072139251",
+    "church_birthday": "20 November 2023",
+    "workers_day": "10 April 2025",
+    "department": "Website",
+    "attendance": "4"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "invitation_location": "Ikeja",
+    "contact": "0704984875",
+    "no_of_follow_up_calls": "3",
+    "date_of_first_visit": "10 January 2025",
+    "status": "no"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "invitation_location": "Anthony",
+    "contact": "09084757575",
+    "no_of_follow_up_calls": "1",
+    "date_of_first_visit": "10 Feburary 2025",
+    "status": "yes"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie@example.com",
+    "invitation_location": "Maryland",
+    "contact": "0802848488",
+    "no_of_follow_up_calls": "5",
+    "date_of_first_visit": "6 May 2025",
+    "status": "no"
+  },
+  {
+    "id": 4,
+    "name": "Kairo",
+    "email": "kairo@example.com",
+    "invitation_location": "Yaba",
+    "contact": "08072139251",
+    "no_of_follow_up_calls": "2",
+    "date_of_first_visit": "10 April 2025",
+    "status": "yes"
+  }
+]
